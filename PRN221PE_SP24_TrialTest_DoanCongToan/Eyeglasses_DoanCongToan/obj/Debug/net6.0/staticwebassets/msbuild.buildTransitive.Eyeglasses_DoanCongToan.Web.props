@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Eyeglasses_DoanCongToan.Web.props" />
+</Project>

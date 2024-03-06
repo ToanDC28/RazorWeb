@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PhuongLHK.Asm2.Web.props" />
+</Project>

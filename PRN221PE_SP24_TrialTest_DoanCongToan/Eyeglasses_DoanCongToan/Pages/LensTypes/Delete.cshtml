@@ -1,0 +1,40 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.LensTypes.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+@* <h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>LensType</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LensType.LensTypeName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LensType.LensTypeName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LensType.LensTypeDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LensType.LensTypeDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LensType.IsPrescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LensType.IsPrescription)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="LensType.LensTypeId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div> *@

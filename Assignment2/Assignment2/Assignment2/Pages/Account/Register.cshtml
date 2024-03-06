@@ -1,0 +1,29 @@
+﻿@page
+@model Assignment2.Pages.Account.RegisterModel
+@{
+        <h1>Register Page</h1>
+    @if (!string.IsNullOrEmpty(Model.error))
+    {
+            <div class="alert alert-danger" role="alert">
+            @Model.error
+            </div>
+    }
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="username"></label>
+                    <input asp-for="username" class="form-control" name="username" />
+                    <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" name="Password"/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fullname"></label>
+                <input asp-for="fullname" name="fullname" class="form-control" />
+                            
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+}

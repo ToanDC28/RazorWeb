@@ -1,0 +1,45 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.LensTypes.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>LensType</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LensType.LensTypeId" />
+            <div class="form-group">
+                <label asp-for="LensType.LensTypeName" class="control-label"></label>
+                <input asp-for="LensType.LensTypeName" class="form-control" />
+                <span asp-validation-for="LensType.LensTypeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LensType.LensTypeDescription" class="control-label"></label>
+                <input asp-for="LensType.LensTypeDescription" class="form-control" />
+                <span asp-validation-for="LensType.LensTypeDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LensType.IsPrescription" class="control-label"></label>
+                <input asp-for="LensType.IsPrescription" class="form-control" />
+                <span asp-validation-for="LensType.IsPrescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

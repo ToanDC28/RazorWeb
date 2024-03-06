@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PhuongLHK.Asm2.Web
+build_property.RootNamespace = PhuongLHK.Asm2.Web
+build_property.ProjectDir = D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Customers/CustomerDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEN1c3RvbWVyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Customers/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Customers/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/OrderDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/OrderDetails/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/OrderDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/OrderDetails/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/OrderDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Products/Shopping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcU2hvcHBpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Suppliers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Suppliers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Suppliers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Suppliers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Suppliers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PhuongLHK.Asm2/PhuongLHK.Asm2/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ci4sxm6224

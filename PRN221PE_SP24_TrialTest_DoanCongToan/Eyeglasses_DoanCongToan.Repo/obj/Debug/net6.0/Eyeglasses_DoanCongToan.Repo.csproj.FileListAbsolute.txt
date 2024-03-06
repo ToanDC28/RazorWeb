@@ -1,0 +1,14 @@
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\bin\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.deps.json
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\bin\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.runtimeconfig.json
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\bin\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.dll
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\bin\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.pdb
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.csproj.AssemblyReference.cache
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.AssemblyInfoInputs.cache
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.AssemblyInfo.cs
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.csproj.CoreCompileInputs.cache
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.dll
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\refint\Eyeglasses_DoanCongToan.Repo.dll
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.pdb
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\Eyeglasses_DoanCongToan.Repo.genruntimeconfig.cache
+D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan.Repo\obj\Debug\net6.0\ref\Eyeglasses_DoanCongToan.Repo.dll

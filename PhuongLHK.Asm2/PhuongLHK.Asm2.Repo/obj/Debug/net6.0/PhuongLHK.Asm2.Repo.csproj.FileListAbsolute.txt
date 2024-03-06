@@ -1,0 +1,14 @@
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\bin\Debug\net6.0\PhuongLHK.Asm2.Repo.deps.json
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\bin\Debug\net6.0\PhuongLHK.Asm2.Repo.runtimeconfig.json
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\bin\Debug\net6.0\PhuongLHK.Asm2.Repo.dll
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\bin\Debug\net6.0\PhuongLHK.Asm2.Repo.pdb
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.csproj.AssemblyReference.cache
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.AssemblyInfoInputs.cache
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.AssemblyInfo.cs
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.csproj.CoreCompileInputs.cache
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.dll
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\refint\PhuongLHK.Asm2.Repo.dll
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.pdb
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\PhuongLHK.Asm2.Repo.genruntimeconfig.cache
+D:\C#\RazorWeb\PhuongLHK.Asm2\PhuongLHK.Asm2.Repo\obj\Debug\net6.0\ref\PhuongLHK.Asm2.Repo.dll

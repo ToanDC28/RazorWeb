@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PhuongLHK.Asm2.Web.props" />
+</Project>

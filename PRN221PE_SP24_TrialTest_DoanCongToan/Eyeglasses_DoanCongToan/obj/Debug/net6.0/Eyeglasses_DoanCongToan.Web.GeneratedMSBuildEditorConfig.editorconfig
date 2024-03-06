@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Eyeglasses_DoanCongToan.Web
+build_property.RootNamespace = Eyeglasses_DoanCongToan.Web
+build_property.ProjectDir = D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C#\RazorWeb\PRN221PE_SP24_TrialTest_DoanCongToan\Eyeglasses_DoanCongToan
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Account/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/EyeGlasses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXllR2xhc3Nlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/EyeGlasses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXllR2xhc3Nlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/EyeGlasses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXllR2xhc3Nlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/EyeGlasses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXllR2xhc3Nlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/EyeGlasses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXllR2xhc3Nlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/LensTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVuc1R5cGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/LensTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVuc1R5cGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/LensTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVuc1R5cGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/LensTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVuc1R5cGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/LensTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVuc1R5cGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/RazorWeb/PRN221PE_SP24_TrialTest_DoanCongToan/Eyeglasses_DoanCongToan/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yabwl1yiwy

@@ -1,0 +1,43 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.Account.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>StoreAccount</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoreAccount.AccountPassword)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoreAccount.AccountPassword)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoreAccount.FullName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoreAccount.FullName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoreAccount.EmailAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoreAccount.EmailAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoreAccount.Role)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoreAccount.Role)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.StoreAccount?.AccountId">Edit</a> |
+    <a asp-page="./View">Back to List</a>
+</div>

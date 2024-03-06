@@ -1,0 +1,83 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.Account.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Accounts</h1>
+
+<p>
+    <a asp-page="Register">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].AccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].EmailAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].Role)
+            </th>
+            @if(Model.role == 1)
+            {
+                <th></th>
+            }
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Account)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailAddress)
+                </td>
+                @if(item.Role == 1)
+                {
+                    <td>
+                        Admin
+                    </td>
+                }else if(item.Role == 2)
+                {
+                    <td>
+                    Staff
+                    </td>
+                }else if(item.Role == 3)
+                {
+                    <td>
+                        Manager
+                    </td>
+                }
+                else
+                {
+                    <td>
+                    Customer
+                </td>
+                }
+                @if(Model.role == 1)
+                {
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.AccountId">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.AccountId">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.AccountId">Delete</a>
+                </td>
+                }
+                
+            </tr>
+        }
+    </tbody>
+</table>
+

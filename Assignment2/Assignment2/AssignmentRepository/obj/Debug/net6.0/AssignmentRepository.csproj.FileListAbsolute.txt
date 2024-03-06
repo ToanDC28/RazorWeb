@@ -1,0 +1,15 @@
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\bin\Debug\net6.0\AssignmentRepository.deps.json
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\bin\Debug\net6.0\AssignmentRepository.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\bin\Debug\net6.0\AssignmentRepository.pdb
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\bin\Debug\net6.0\Assignment2Entity.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\bin\Debug\net6.0\Assignment2Entity.pdb
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.csproj.AssemblyReference.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.AssemblyInfoInputs.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.AssemblyInfo.cs
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.csproj.CoreCompileInputs.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.csproj.CopyComplete
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\refint\AssignmentRepository.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\AssignmentRepository.pdb
+D:\C#\RazorWeb\Assignment2\Assignment2\AssignmentRepository\obj\Debug\net6.0\ref\AssignmentRepository.dll

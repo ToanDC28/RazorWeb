@@ -1,0 +1,50 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.Account.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>StoreAccount</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="StoreAccount.AccountId" />
+            <div class="form-group">
+                <label asp-for="StoreAccount.AccountPassword" class="control-label"></label>
+                <input asp-for="StoreAccount.AccountPassword" class="form-control" />
+                <span asp-validation-for="StoreAccount.AccountPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoreAccount.FullName" class="control-label"></label>
+                <input asp-for="StoreAccount.FullName" class="form-control" />
+                <span asp-validation-for="StoreAccount.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoreAccount.EmailAddress" class="control-label"></label>
+                <input asp-for="StoreAccount.EmailAddress" class="form-control" />
+                <span asp-validation-for="StoreAccount.EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoreAccount.Role" class="control-label"></label>
+                <input asp-for="StoreAccount.Role" class="form-control" />
+                <span asp-validation-for="StoreAccount.Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./View">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,14 @@
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\bin\Debug\net6.0\Assignment2Entity.deps.json
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\bin\Debug\net6.0\Assignment2Entity.runtimeconfig.json
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\bin\Debug\net6.0\Assignment2Entity.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\bin\Debug\net6.0\Assignment2Entity.pdb
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.csproj.AssemblyReference.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.AssemblyInfoInputs.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.AssemblyInfo.cs
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.csproj.CoreCompileInputs.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\refint\Assignment2Entity.dll
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.pdb
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\Assignment2Entity.genruntimeconfig.cache
+D:\C#\RazorWeb\Assignment2\Assignment2\Assignment2Library\obj\Debug\net6.0\ref\Assignment2Entity.dll

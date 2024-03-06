@@ -1,0 +1,42 @@
+﻿@page
+@model PhuongLHK.Asm2.Web.Pages.Categories.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="justify-content-center">
+    <h1 style="margin-left: 35%">Edit Category</h1>
+</div>
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Category.CategoryId" />
+            <div class="form-group">
+                <label asp-for="Category.CategoryName" class="control-label"></label>
+                <input asp-for="Category.CategoryName" class="form-control" />
+                <span asp-validation-for="Category.CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.Description" class="control-label"></label>
+                <input asp-for="Category.Description" class="form-control" />
+                <span asp-validation-for="Category.Description" class="text-danger"></span>
+            </div>
+            <nav class="nav" style="margin: 10px">
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+                <div style="margin-left: 50px; margin-top: 10px">
+                    <a asp-page="./Index">Back to List</a>
+                </div>
+            </nav>
+            
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

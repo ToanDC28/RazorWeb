@@ -1,0 +1,56 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.LensTypes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lenstype</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LensType[0].LensTypeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LensType[0].LensTypeDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LensType[0].IsPrescription)
+            </th>
+            @if(Model.role == 1)
+            {
+                <th></th>
+            }
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.LensType) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LensTypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LensTypeDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPrescription)
+            </td>
+                @if (Model.role == 1)
+                {
+                    <td>
+                <a asp-page="./Edit" asp-route-id="@item.LensTypeId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.LensTypeId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.LensTypeId">Delete</a>
+            </td>
+                }
+            
+        </tr>
+}
+    </tbody>
+</table>

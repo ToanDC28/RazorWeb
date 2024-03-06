@@ -1,0 +1,99 @@
+﻿@page
+@model Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Eye Glasses</h1>
+<form asp-page="./Index" method="post">
+    <div class="form-actions no-color">
+        <p>
+            Find by name:
+            <input type="text" name="SearchString" value="@Model.SearchString" />
+            <input type="submit" value="Search" class="btn btn-primary" /> 
+        </p>
+    </div>
+</form>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].EyeglassesName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].EyeglassesDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].FrameColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].Price)
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].CreatedDate)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Eyeglass[0].LensType)
+            </th> *@
+            @if(Model.role == 1)
+            {
+                <th></th>
+            }
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Eyeglass) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EyeglassesName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EyeglassesDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FrameColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.LensType.LensTypeName)
+            </td> *@
+                @if(Model.role == 1)
+                {
+                    <td>
+                <a asp-page="./Edit" asp-route-id="@item.EyeglassesId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.EyeglassesId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.EyeglassesId">Delete</a>
+            </td>
+                }
+                
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <ul class="pagination">
+        @for (var i = 1; i <= Model.TotalPages; i++)
+        {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a asp-page="./Index" asp-route-currentpage="@i" class="page-link">@i</a>
+                </li>
+        }
+    </ul>
+</div>

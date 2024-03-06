@@ -1,0 +1,43 @@
+﻿@page
+@model Assignment2.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Login";
+
+}
+@{
+    <h1>Login Page</h1>
+    @if (Model.Input != null)
+    {
+        var latestErrorMessage = Model.ModelState.Values.SelectMany(v => v.Errors)
+                                            .OrderByDescending(e => e.Exception?.HResult)
+                                            .Select(e => e.ErrorMessage)
+                                            .FirstOrDefault();
+
+        if (!string.IsNullOrEmpty(latestErrorMessage))
+        {
+                    <div class="alert alert-danger" role="alert">
+                @latestErrorMessage
+                    </div>
+        }
+    }
+
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Input.Email"></label>
+            <input asp-for="Input.Email" class="form-control" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Input.Password"></label>
+            <input asp-for="Input.Password" class="form-control" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input asp-for="Input.RememberMe" class="form-check-input" />
+                <label class="form-check-label" asp-for="Input.RememberMe"></label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+}
