@@ -27,13 +27,13 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 return NotFound();
             }
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
                 return RedirectToPage("/Account/Login");
             }
-            var storeaccount = await unitOfWork._context.StoreAccounts.FirstOrDefaultAsync(m => m.AccountId == id);
+            var storeaccount = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == id.Value);
             if (storeaccount == null)
             {
                 return NotFound();

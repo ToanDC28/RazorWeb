@@ -39,14 +39,14 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 ModelState.AddModelError(string.Empty, "Invalid field");
                 return Page();
             }
-            var user = unitOfWork._context.StoreAccounts.Any(a => a.EmailAddress == email);
+            var user = unitOfWork.StoreAccRepository.GetAll().Any(a => a.EmailAddress == email);
             if (user != null)
             {
                 ModelState.AddModelError(string.Empty, "Account is existed");
                 return Page();
             }
-            var index = unitOfWork._context.StoreAccounts.Max(c => c.AccountId);
-            unitOfWork._context.StoreAccounts.Add(new Repo.Models.StoreAccount
+            var index = unitOfWork.StoreAccRepository.GetAll().Max(c => c.AccountId);
+            unitOfWork.StoreAccRepository.Add(new Repo.Models.StoreAccount
             {
                 AccountId = index + 1,
                 AccountPassword = password,

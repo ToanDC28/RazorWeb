@@ -36,7 +36,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 error = "All field is required";
                 return Page();
             }
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.EmailAddress == email && a.AccountPassword == password);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.EmailAddress == email && p.AccountPassword == password);
             if (user == null)
             {
                 error = "User is in valid";

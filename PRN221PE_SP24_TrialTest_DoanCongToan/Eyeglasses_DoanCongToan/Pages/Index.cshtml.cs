@@ -23,7 +23,7 @@ namespace Eyeglasses_DoanCongToan.Pages
                 return RedirectToPage("/Account/Login");
             }
             int id = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == id);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == id);
             role = user.Role.Value;
             return Page();
         }

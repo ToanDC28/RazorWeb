@@ -29,13 +29,13 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 return NotFound();
             }
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             int role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
                 return RedirectToPage("/Account/Login");
             }
-            var storeaccount = unitOfWork._context.StoreAccounts.FirstOrDefault(m => m.AccountId == id);
+            var storeaccount = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == id.Value);
 
             if (storeaccount == null)
             {
@@ -43,7 +43,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
             }
             else 
             {
-                unitOfWork._context.StoreAccounts.Remove(storeaccount);
+                unitOfWork.StoreAccRepository.Delete(storeaccount);
             }
             return Page();
         }

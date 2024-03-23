@@ -33,6 +33,8 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
         /// <returns></returns>
         T GetById(int id, bool allowTracking = true);
 
+
+        int GetMaxID();
         /// <summary>
         /// Get entity by lambda expression
         /// </summary>
@@ -114,6 +116,9 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
            string includeProperties = "",
            int? pageIndex = null, // Optional parameter for pagination (page number)
            int? pageSize = null);
+
+
+        T Login(string username, string password);
         #endregion
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eyeglasses_DoanCongToan.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26cb9f5d4d0c1f7d32f5fc717fefdb78e477b1eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eyeglasses_DoanCongToan.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eyeglasses_DoanCongToan.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

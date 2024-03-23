@@ -6,7 +6,7 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
 {
     public class UnitOfWork : IDisposable
     {
-        public Eyeglasses2024DBContext _context { get; }
+        private Eyeglasses2024DBContext _context { get; }
 
         private IRepository<Eyeglass> eGRepository;
         public IRepository<Eyeglass> eyeGlassRepository
@@ -22,7 +22,7 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
         }
 
         private IRepository<LensType> lTRepository;
-        private IRepository<LensType> lenTypeRepository { 
+        public IRepository<LensType> lenTypeRepository { 
             get 
             {
                 if (lTRepository == null)
@@ -34,7 +34,7 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
         }
 
         private IRepository<StoreAccount> accRepository;
-        private IRepository<StoreAccount> StoreAccRepository {
+        public IRepository<StoreAccount> StoreAccRepository {
             get 
             {
                 if (accRepository == null)
@@ -56,7 +56,15 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
             StoreAccRepository.DbContext = _context;
 
         }
+        public StoreAccount GetAccountByID(int id)
+        {
+            return StoreAccRepository.GetById(id);
+        }
 
+        public int GetMaxAcc()
+        {
+            return StoreAccRepository.GetMaxID();
+        }
         public int SaveChanges()
         {
             var iResult = _context.SaveChanges();

@@ -27,7 +27,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
         public async Task<IActionResult> OnGetAsync(string id)
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
@@ -38,7 +38,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
                 return NotFound();
             }
 
-            var lenstype =  await unitOfWork._context.LensTypes.FirstOrDefaultAsync(m => m.LensTypeId == id);
+            var lenstype =  unitOfWork.lenTypeRepository.GetAll().FirstOrDefault(p => p.LensTypeId == id);
             if (lenstype == null)
             {
                 return NotFound();
@@ -56,11 +56,11 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
                 return Page();
             }
 
-            unitOfWork._context.Attach(LensType).State = EntityState.Modified;
+            unitOfWork.lenTypeRepository.Update(LensType);
 
             try
             {
-                await unitOfWork._context.SaveChangesAsync();
+                await unitOfWork.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -79,7 +79,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
 
         private bool LensTypeExists(string id)
         {
-          return (unitOfWork._context.LensTypes?.Any(e => e.LensTypeId == id)).GetValueOrDefault();
+          return (unitOfWork.lenTypeRepository.GetAll().Any(e => e.LensTypeId == id));
         }
     }
 }

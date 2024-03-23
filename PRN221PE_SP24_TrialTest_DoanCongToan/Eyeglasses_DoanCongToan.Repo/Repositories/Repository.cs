@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -230,6 +231,30 @@ namespace Eyeglasses_DoanCongToan.Repo.Repositories
             }
 
             return query.ToList();
+        }
+
+        int IRepository<T>.GetMaxID()
+        {
+            return DbSet.Max(c => (int)c.GetType().GetProperty("AccountID").GetValue(c));
+        }
+
+        public T Login(string username, string password)
+        {
+            var usernameProperty = typeof(T).GetProperty("EmailAddress");
+            var passwordProperty = typeof(T).GetProperty("AccountPassword");
+
+            if (usernameProperty != null && passwordProperty != null)
+            {
+                var user = DbSet.FirstOrDefault(a =>
+                    (string)usernameProperty.GetValue(a) == username &&
+                    (string)passwordProperty.GetValue(a) == password);
+
+                return user;
+            }
+            else
+            {
+                throw new InvalidOperationException("The entity does not have 'Username' and/or 'Password' properties.");
+            }
         }
     }
 }

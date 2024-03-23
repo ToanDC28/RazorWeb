@@ -23,16 +23,13 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
         public IActionResult OnGet()
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role == 4)
             {
                 return RedirectToPage("/Account/Login");
             }
-            if (unitOfWork._context.LensTypes != null)
-            {
-                LensType = unitOfWork._context.LensTypes.ToList();
-            }
+            LensType = unitOfWork.lenTypeRepository.GetAll().ToList();
             return Page();
         }
     }

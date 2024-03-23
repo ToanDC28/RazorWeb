@@ -23,7 +23,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
         public IActionResult OnGet()
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
@@ -48,15 +48,15 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
             {
                 return Page();
             }
-            var index = unitOfWork._context.LensTypes.Max(a => a.LensTypeId);
-            unitOfWork._context.LensTypes.Add(new LensType
+            var index = unitOfWork.lenTypeRepository.GetAll().Max(p => p.LensTypeId);
+            unitOfWork.lenTypeRepository.Add(new LensType
             {
                 LensTypeId = index + 1,
                 LensTypeName = LensTypeName,
                 LensTypeDescription = Description,
                 IsPrescription = Description.IsNullOrEmpty()
             });
-            await unitOfWork._context.SaveChangesAsync();
+            await unitOfWork.SaveChangesAsync();
 
             return RedirectToPage("./Index");
         }

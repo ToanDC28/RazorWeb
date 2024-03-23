@@ -30,13 +30,13 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
                 return NotFound();
             }
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
                 return RedirectToPage("/Account/Login");
             }
-            var eyeglass = await unitOfWork._context.Eyeglasses.FirstOrDefaultAsync(m => m.EyeglassesId == id);
+            var eyeglass = unitOfWork.eyeGlassRepository.GetAll().FirstOrDefault(p => p.EyeglassesId == id.Value);
 
             if (eyeglass == null)
             {
@@ -55,13 +55,13 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
             {
                 return NotFound();
             }
-            var eyeglass = await unitOfWork._context.Eyeglasses.FindAsync(id);
+            var eyeglass = await unitOfWork.eyeGlassRepository.GetByIdAsync(id.Value);
 
             if (eyeglass != null)
             {
                 Eyeglass = eyeglass;
-                unitOfWork._context.Eyeglasses.Remove(Eyeglass);
-                await   unitOfWork._context.SaveChangesAsync();
+                unitOfWork.eyeGlassRepository.Delete(Eyeglass);
+                await   unitOfWork.SaveChangesAsync();
             }
 
             return RedirectToPage("./Index");

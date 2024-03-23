@@ -11677,11 +11677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan\\Eyeglasses_DoanCongToan.Web.csproj",
+      "projectUniqueName": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan\\Eyeglasses_DoanCongToan.Web.csproj",
       "projectName": "Eyeglasses_DoanCongToan.Web",
-      "projectPath": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan\\Eyeglasses_DoanCongToan.Web.csproj",
+      "projectPath": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan\\Eyeglasses_DoanCongToan.Web.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan\\obj\\",
+      "outputPath": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11698,8 +11698,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj": {
-              "projectPath": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj"
+            "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj": {
+              "projectPath": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj"
             }
           }
         }

@@ -2995,11 +2995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj",
+      "projectUniqueName": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj",
       "projectName": "Eyeglasses_DoanCongToan.Repo",
-      "projectPath": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj",
+      "projectPath": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\Eyeglasses_DoanCongToan.Repo.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\obj\\",
+      "outputPath": "D:\\RazorWeb\\PRN221PE_SP24_TrialTest_DoanCongToan\\Eyeglasses_DoanCongToan.Repo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

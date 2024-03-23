@@ -30,14 +30,14 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 return NotFound();
             }
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
                 return RedirectToPage("/Account/Login");
             }
 
-            var storeaccount =  await unitOfWork._context.StoreAccounts.FirstOrDefaultAsync(m => m.AccountId == id);
+            var storeaccount = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == id.Value);
             if (storeaccount == null)
             {
                 return NotFound();
@@ -56,11 +56,11 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 return Page();
             }
 
-            unitOfWork._context.Attach(StoreAccount).State = EntityState.Modified;
+            unitOfWork.StoreAccRepository.Update(StoreAccount);
 
             try
             {
-                await unitOfWork._context.SaveChangesAsync();
+                await unitOfWork.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -79,7 +79,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
 
         private bool StoreAccountExists(int id)
         {
-          return (unitOfWork._context.StoreAccounts?.Any(e => e.AccountId == id)).GetValueOrDefault();
+          return (unitOfWork.StoreAccRepository.GetAll().Any(e => e.AccountId == id));
         }
     }
 }

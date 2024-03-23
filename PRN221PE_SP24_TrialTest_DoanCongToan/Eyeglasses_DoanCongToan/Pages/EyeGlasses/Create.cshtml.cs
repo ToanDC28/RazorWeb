@@ -23,13 +23,13 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
         public IActionResult OnGet()
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
                 return RedirectToPage("/Account/Login");
             }
-            ViewData["LensTypeId"] = new SelectList(unitOfWork._context.LensTypes, "LensTypeId", "LensTypeName");
+            ViewData["LensTypeId"] = new SelectList(unitOfWork.lenTypeRepository.GetAll(), "LensTypeId", "LensTypeName");
             return Page();
         }
 
@@ -49,12 +49,12 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
             {
                 return Page();
             }
-            int index = unitOfWork._context.Eyeglasses.Max(p => p.EyeglassesId);
+            int index = unitOfWork.eyeGlassRepository.GetAll().Max(p => p.EyeglassesId);
             if(Quantity > 999 || Quantity < 0)
             {
                 ModelState.AddModelError(string.Empty, "Quantity is invalid");
             }
-            unitOfWork._context.Eyeglasses.Add(new Eyeglass
+            unitOfWork.eyeGlassRepository.Add(new Eyeglass
             {
                 EyeglassesId = index + 1,
                 CreatedDate = DateTime.Now,
@@ -63,7 +63,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
                 FrameColor = Color,
                 LensTypeId = LensTypeId
             });
-            await unitOfWork._context.SaveChangesAsync();
+            await unitOfWork.SaveChangesAsync();
 
             return RedirectToPage("./Index");
         }

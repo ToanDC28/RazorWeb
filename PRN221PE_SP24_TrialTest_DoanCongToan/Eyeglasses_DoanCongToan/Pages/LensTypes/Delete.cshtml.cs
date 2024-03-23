@@ -21,7 +21,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
         public IActionResult OnGet()
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
@@ -31,38 +31,18 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.LensTypes
         }
         public int role { get; set; }
 
-        /*public async Task<IActionResult> OnGetAsync(string id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var lenstype = await unitOfWork._context.LensTypes.FirstOrDefaultAsync(m => m.LensTypeId == id);
-
-            if (lenstype == null)
-            {
-                return NotFound();
-            }
-            else 
-            {
-                LensType = lenstype;
-            }
-            return Page();
-        }*/
-
         public async Task<IActionResult> OnPostAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            var lenstype = await unitOfWork._context.LensTypes.FindAsync(id);
+            var lenstype = unitOfWork.lenTypeRepository.GetAll().Where(a => a.LensTypeId == id).FirstOrDefault();
 
             if (lenstype != null)
             {
-                unitOfWork._context.LensTypes.Remove(lenstype);
-                await unitOfWork._context.SaveChangesAsync();
+                unitOfWork.lenTypeRepository.Delete(lenstype);
+                unitOfWork.SaveChanges();
             }
 
             return RedirectToPage("./Index");

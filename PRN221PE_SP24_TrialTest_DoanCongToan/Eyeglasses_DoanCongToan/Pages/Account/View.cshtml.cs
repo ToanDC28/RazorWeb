@@ -24,7 +24,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
             if (HttpContext.Session.GetString("userID") != null)
             {
                 int id = int.Parse(HttpContext.Session.GetString("userID"));
-                var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == id);
+                var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == id);
                 if (user.Role == 4)
                 {
                     return RedirectToPage("/Index");
@@ -32,7 +32,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 else
                 {
                     role = user.Role.Value;
-                    Account = unitOfWork._context.StoreAccounts.ToList();
+                    Account = unitOfWork.StoreAccRepository.GetAll().ToList();
                     return Page();
                 }
 

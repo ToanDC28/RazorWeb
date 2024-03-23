@@ -22,7 +22,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
         public IActionResult OnGet()
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
@@ -55,8 +55,8 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 return Page();
             }
             
-            int index = unitOfWork._context.StoreAccounts.Max(a => a.AccountId);
-            unitOfWork._context.StoreAccounts.Add(new StoreAccount
+            int index = unitOfWork.GetMaxAcc();
+            unitOfWork.StoreAccRepository.Add(new StoreAccount
             {
                 AccountId = index + 1,
                 AccountPassword = password,
@@ -64,7 +64,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.Account
                 FullName = fullname,
                 Role = userrole
             });
-            await unitOfWork._context.SaveChangesAsync();
+            await unitOfWork.SaveChangesAsync();
 
             return RedirectToPage("./Index");
         }

@@ -31,20 +31,20 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
                 return NotFound();
             }
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role != 1)
             {
                 return RedirectToPage("/Account/Login");
             }
 
-            var eyeglass =  await unitOfWork._context.Eyeglasses.FirstOrDefaultAsync(m => m.EyeglassesId == id);
+            var eyeglass = unitOfWork.eyeGlassRepository.GetAll().FirstOrDefault(p => p.EyeglassesId == id.Value);
             if (eyeglass == null)
             {
                 return NotFound();
             }
             Eyeglass = eyeglass;
-            ViewData["LensTypeId"] = new SelectList(unitOfWork._context.LensTypes, "LensTypeId", "LensTypeName");
+            ViewData["LensTypeId"] = new SelectList(unitOfWork.lenTypeRepository.GetAll(), "LensTypeId", "LensTypeName");
             return Page();
         }
 
@@ -57,11 +57,11 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
                 return Page();
             }
 
-            unitOfWork._context.Attach(Eyeglass).State = EntityState.Modified;
+            unitOfWork.eyeGlassRepository.Update(Eyeglass);
 
             try
             {
-                await unitOfWork._context.SaveChangesAsync();
+                await unitOfWork.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -80,7 +80,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
 
         private bool EyeglassExists(int id)
         {
-          return (unitOfWork._context.Eyeglasses?.Any(e => e.EyeglassesId == id)).GetValueOrDefault();
+            return (unitOfWork.eyeGlassRepository.GetAll().Any(e => e.EyeglassesId == id));
         }
     }
 }

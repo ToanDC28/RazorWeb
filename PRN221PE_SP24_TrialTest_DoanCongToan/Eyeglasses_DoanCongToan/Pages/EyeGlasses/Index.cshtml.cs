@@ -32,7 +32,7 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
         public IActionResult OnGet()
         {
             int userid = int.Parse(HttpContext.Session.GetString("userID"));
-            var user = unitOfWork._context.StoreAccounts.FirstOrDefault(a => a.AccountId == userid);
+            var user = unitOfWork.StoreAccRepository.GetAll().FirstOrDefault(p => p.AccountId == userid);
             role = user.Role.Value;
             if (HttpContext.Session.GetString("userID") == null || role == 4)
             {
@@ -45,15 +45,15 @@ namespace Eyeglasses_DoanCongToan.Web.Pages.EyeGlasses
         }
         public IActionResult OnPost()
         {
-            var eyes = unitOfWork._context.Eyeglasses.Where(s => s.EyeglassesDescription.Contains(SearchString)).Skip((CurrentPage - 1) * PageSize).Take(PageSize)
-                .Include(e => e.LensType);
-            if (!eyes.Any())
-            {
-                eyes = unitOfWork._context.Eyeglasses.Where(s => s.Price == decimal.Parse(SearchString)).Skip((CurrentPage - 1) * PageSize).Take(PageSize)
-                .Include(e => e.LensType);
-            }
-            Count = eyes.Count();
-            Eyeglass = eyes.ToList();
+            var paginationResult = unitOfWork.eyeGlassRepository.GetByPagination(
+        pageIndex: CurrentPage,
+        pageSize: PageSize,
+        filter: s => s.EyeglassesDescription.Contains(SearchString) || s.Price == decimal.Parse(SearchString),
+        includeProperties: "LensType"
+    );
+
+            Count = paginationResult.Count();
+            Eyeglass = paginationResult.ToList();
             return Page();
         }
     }
